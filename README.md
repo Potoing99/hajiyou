@@ -1,20 +1,28 @@
----
-title: Hajiyou
-emoji: 🚀
-colorFrom: red
-colorTo: red
-sdk: docker
-app_port: 8501
-tags:
-- streamlit
-pinned: false
-short_description: 하지정맥류 AI 자가진단 서비스 (CEAP 분류 기반)
-license: mit
----
+# 하지정맥류 AI 자가진단 서비스
 
-# Welcome to Streamlit!
+2026년 병무청·방위사업청·질병관리청 합동 공공데이터·AI 활용 경진대회 출품작
 
-Edit `/src/streamlit_app.py` to customize this app to your heart's desire. :heart:
+## 서비스 소개
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+CEAP 분류 기반 하지정맥류 AI 자가진단 서비스입니다.  
+다리 사진을 업로드하면 AI가 CEAP 단계(C0~C6)를 분류하고, VCSS 설문과 결합하여 진단 결과를 제공합니다.
+
+## 주요 기능
+
+- AI 이미지 진단 (EfficientNet-B2, 정확도 84.21%)
+- VCSS 기반 자가 설문
+- 하지정맥류 환자 통계 시각화 (HIRA 공공데이터)
+- 치료법 안내, 보험·비용 정보, 병원 찾기
+
+## 활용 공공데이터
+
+- HIRA 보건의료빅데이터: 하지정맥류 환자 수 (2016~2024)
+- 질병관리청 국민건강영양조사 (KNHANES) 2024
+- 질병관리청 지역사회건강조사 2025
+
+## 실행 방법
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
