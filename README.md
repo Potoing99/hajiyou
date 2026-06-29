@@ -26,3 +26,4 @@ CEAP 분류 기반 하지정맥류 AI 자가진단 서비스입니다.
 pip install -r requirements.txt
 streamlit run app.py
 ```
+혹은 https://hajiyou.streamlit.app 접속 후 사용
